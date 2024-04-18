@@ -1,0 +1,30 @@
+export { <fnc2.>, <fnc3.> };
+export default <fnc.>;
+> exports fnc. as default 
+
+import <fnc.> from "<path>";
+import { <fnc2.> } from "<path>";
+> no need to use {} for default export
+
+npm init
+npm init -y
+> initialises a package.json file with default values
+
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+console.log(__dirname);
+> to print the currect directory name (using ES6)
+
+res.send(...)
+> send data like html, json to the uri
+
+res.render(...)
+> render views defined (using hbs, ejs) to the specified uri
+
+res.render("<file>", { ... })
+> pass params to render content dynamically
+
+const viewsPath = path.join(__dirname, "../templates");
+app.set("views", viewsPath);
+> use templates dir to store and use views (i.e. hbs or ejs)
