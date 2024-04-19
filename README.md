@@ -25,4 +25,4 @@ Navigate to the desired project directory.
 -  GEOCODE_KEY: Your API key for geocoding services.
 -  WEATHER_KEY: Your API key for weather services.
 
-3. Run `npm run devStart` to start the programs
+3. Run `npm run devStart` to start any program
